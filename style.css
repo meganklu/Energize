@@ -1,0 +1,276 @@
+
+/* CSS FOR ENTIRE SITE */
+* {
+  /* RESET MARGINS AND PADDING */
+  padding: 0;
+  margin: 0;
+
+  /* CHANGE FONT */
+  font-family: Montserrat, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+
+  /* INCLUDE PADDING/BORDERS IN ELEMENTS TOTAL LENGTH/WIDTH */
+  box-sizing: border-box;
+}
+
+body {
+  /* CHANGE OVERALL BACKGROUND COLOR */
+  background-color: #004643;
+
+  /* NAVIGATION BAR BORDER 
+  border-color: #001e1d;
+  border-style: solid;
+  border-width: 5px; */
+
+  /* SETS MINIMUM HEIGHT OF THE BODY */
+  min-height: 100vh; /* 100% of viewport height */
+}
+
+main {
+  margin: 3%;
+}
+
+a {
+  /* REMOVE UNDERLINE FOR LINKS */
+  text-decoration: none;
+  color: #e16162;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header {
+  text-align: center;
+  color: #fffffe;
+  font-size: 2em;
+  margin: 2%;
+}
+
+/* HEADER LIGHTNING BOLT COLOR */
+.fa-bolt {
+  color: #f9bc60;
+}
+
+/* NAVIGATION BAR */
+
+nav ul {
+  /* REMOVES BULLET POINTS */
+  list-style-type: none;
+
+  /* CLIPS OVERFLOW CONTENT */
+  overflow: hidden;
+
+  /* ADDS PADDING TO NAV BAR */
+  padding: 18px;
+
+  /* CHANGES HORIZONTAL ALIGNMENT OF TEXT */
+  text-align: left;
+
+  /* NAVIGATION BAR BACKGROUND COLOR */
+  padding: 1em;
+  background-color: #abd1c6;
+
+  /* NAVIGATION BAR BORDER 
+  border-color: #001e1d;
+  border-style: solid;
+  border-bottom-width: 5px; */
+}
+
+nav li {
+  /* PUTS LIST ITEMS INLINE (NOT STACKED) */
+  display: inline;
+
+  /* ADDS MARGIN BETWEEN EACH LIST ITEM */
+  margin: 12px;
+
+  /* TEXT SIZE */
+  font-size: 20px;
+}
+
+nav li a {
+  /* TEXT COLOR */
+  color: #001e1d;
+}
+
+nav li a:hover {
+  /* REMOVES LINK UNDERLINE */
+  text-decoration: none;
+
+  /* TEXT COLOR ON HOVER */
+  color: #f9bc60;
+}
+
+.openedPage {
+  font-weight: bold;
+}
+
+/* END OF NAVIGATION BAR CSS */
+
+/*DESCRIPTION CSS */
+.description {
+  color: #e8e4e6;
+  margin: 0 3%;
+  font-size: 2em;
+  text-align: center;
+}
+
+.highlight {
+  background-color: #f9bc60;
+  color: #000000;
+  font-weight: bold;
+}
+
+/* NEWS HEADLINES */
+.headingsList {
+  text-align: left;
+  margin: 2%;
+  padding: 1.5em;
+  background-color: #abd1c6;
+  border-radius: 80px;
+}
+
+.headingsList h1 {
+  text-align: center;
+}
+
+.headline {
+  display: flex;
+}
+
+.headline img {
+  width: 60%;
+  margin: 3%;
+}
+
+.headlineText {
+  margin: 3%;
+  line-height: 1.5;
+}
+
+.newsDate {
+  color: grey;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  color: #abd1c6;
+  margin: 3%;
+}
+
+/* DATA PAGE */
+.energyTitle{
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.subEnergy {
+  background-color: #abd1c6;
+  border-radius: 86px;
+  margin: 3%;
+  padding: 1.75em;
+}
+
+.flexbox {
+  display: flex;
+  width: 100vw;
+}
+
+.flexboxTextEnergy {
+  width: 40%;
+}
+
+.flexboxText {
+  width: 53%;
+}
+
+.flexboxTextCentered {
+  text-align: center;
+}
+
+.energyDescription{
+  font-size: 1.45em;
+  color: #001e1d;
+}
+
+.sunIndex{
+  width: 600px;
+  height: 500px;
+}
+
+.explanation{
+  margin-top: 10px;
+  color: black;
+}
+
+.SeeBelow{
+  font-style: italic;
+  font-weight: bold;
+  font-size: 0.86em;
+}
+
+.whyShould {
+  color: white;
+  text-align: center;
+  margin-left: 3%;
+}
+
+.termsList{
+    color: white;
+  text-align: center;
+  margin-left: 3%;
+  font-size: 0.8em;
+}
+
+.terms{
+  font-weight: bold;
+}
+
+/* POLITICS PAGE */
+.centerDataViz {
+  text-align: center;
+}
+
+/* SOURCES PAGE */
+.dataSourcesPage {
+  text-align: center;
+  color: #e8e4e6;
+  line-height: 1.5;
+}
+
+.dataSourcesPage ul {
+  list-style-type: none;
+}
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 1100px) {
+  .description {
+    font-size: 1.25em;
+  }
+  
+  .headline {
+    display: block;
+    text-align: center;
+  }
+  
+  .flexbox {
+    display: block;
+    text-align: center;
+  }
+
+  .flexboxText {
+    width: 95vw;
+    margin-left: 0 2%;
+  }
+
+  .flexboxTextEnergy {
+    width: 80%;
+  }
+
+  .whyShould {
+    margin: 0;
+  }
+}
+/* END OF MEDIA QUERIES */
+
